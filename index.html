@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Solomo Argentina - Redes e Impresiones</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Solomo" name="keywords">
+    <meta content="Agencia de marketing e impresiones" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-success text-uppercase">🐍Solomo</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <!--Hice navegable el dentro del mismo html -->
+                <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                <a href="#servicios" class="nav-item nav-link">Servicios</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Más</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#redes" class="dropdown-item">Pack de Redes</a>
+                        <a href="#licencias" class="dropdown-item">Licencias</a>
+                        <a href="#horario" class="dropdown-item">Horarios de trabajo</a>
+                        <a href="#marcas" class="dropdown-item">Marcas</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <a href="" class="btn btn-success rounded-0 py-2 px-lg-4 d-none d-lg-block">Ingresar<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Nos enfocamos en identificar tendencias y oportunidades,</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">innovamos para generar un valor agregado.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid w-75 align-self-end" src="img/about.jpg" alt="">
+                        <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
+                            <h1 class="text-uppercase text-success mb-3">6 años</h1>
+                            <h2 class="text-uppercase mb-0">transformando ideas en realidad.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p id="sobre" class="d-inline-block bg-secondary text-success py-1 px-4">SOBRE</p>
+                    <h1 class="text-uppercase mb-4">Leandro Ortiz - CEO</h1>
+                    <p><strong>Personalidad, valor y fidelidad</strong> son cualidades que nos definen. Nuestra fuerza interior es lo que siempre nos lleva a hacer un esfuerzo adicional; somos un equipo creativo que busca la singularidad en todo lo que hacemos. Construimos relaciones entre marcas y personas, a través de datos relevantes y creativos.</p>
+                    <p class="mb-4">Trabajamos junto a nuestros clientes para superar sus expectativas, sueños y metas, no solo somos sus socios comerciales, también somos sus amigos. <strong>Conocer al cliente y conectarlo con tu marca,</strong> con cada una de sus necesidades y sentimientos, es lo que caracteriza a Solomo Argentina</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="text-success text-uppercase mb-3">Desde 2016</h3>
+                            <p class="mb-0">Ofrecemos soluciones creativas a problemas comunes y corrientes.
+                                Un servicio integral, lo que significa que contamos con cobertura desde el diseño y el contenido hasta la planificación de objetivos comerciales.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-success text-uppercase mb-3">+1500 proyectos</h3>
+                            <p class="mb-0">Formarás una relación duradera con nuestra agencia de marketing digital Argentina. La colaboración y comunicación es fundamental para nosotros y para el desarrollo de soluciones creativas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p id="servicios" class="d-inline-block bg-secondary text-success py-1 px-4">SERVICIOS</p>
+                <h1 class="text-uppercase">Que ofrecemos</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/haircut.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Medios Sociales</h3>
+                            <p>Analisis, cronograma de contenido y registro completo en las plataformas necesarias para tu proyecto.</p>
+                            <span class="text-uppercase text-success">Para más info, presiona el + </span>
+                        </div>
+                        <a class="btn btn-square" href="https://api.whatsapp.com/send?phone=+543364219789&text=Hola,%20vengo%20del%20sitio%20web%20y%20me%20interesa%20saber%20m%C3%A1s%20sobre%20%22Redes%20sociales%22"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/beard-trim.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Diseño multimedia y almacenamiento</h3>
+                            <p>Archivos editables y finales integrados en <a class="text-success" href="https://www.canva.com/">Canva</a> y almacenamiento gratuito de 15Gb en <a class="text-success" href="https://www.google.com/intl/es/drive/">Google Drive</a></p>
+                            <span class="text-uppercase text-success">Para más info, presiona el +</span>
+                        </div>
+                        <a class="btn btn-square" href="https://api.whatsapp.com/send?phone=+543364219789&text=Hola%20vengo%20del%20sitio%20web%20y%20me%20interesa%20saber%20sobre%20Dise%C3%B1o%20multimedial"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mans-shave.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Decocuadros</h3>
+                            <p>Cuadros personalizados con impresiones de gran formato (hasta 140cmx200cm) realizados en vinilo laminado y montado sobre madera. Calidad fotográfica </p>
+                            <span class="text-uppercase text-success">Mirá el catalogo, presiona el +</span>
+                        </div>
+                        <a class="btn btn-square" href="https://drive.google.com/file/d/13eTcP4jhZYwZ-9NsbUpJbOYBWl6KKw0h/view?usp=share_link"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/hair-dyeing.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Merchandising</h3>
+                            <p>Paquetes de mediana y alta complejidad, impresiones textiles y más</p>
+                            <span class="text-uppercase text-success">Para más info, presiona el +</span>
+                        </div>
+                        <a class="btn btn-square" href="https://api.whatsapp.com/send?phone=+543364219789&text=Hola%20vengo%20del%20sitio%20web%20y%20me%20interesa%20saber%20sobre%20Merchandising"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mustache.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Sitio web</h3>
+                            <p>Adaptado a tu objetivo, landing page publicitaria, tiendas digitales, etc</p>
+                            <span class="text-uppercase text-success">Para más info, presiona el +</span>
+                        </div>
+                        <a class="btn btn-square" href="https://api.whatsapp.com/send?phone=+543364219789&text=Hola%20vengo%20del%20sitio%20web%20y%20me%20interesa%20saber%20sobre%20Sitio%20Web"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/stacking.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Google cloud project</h3>
+                            <p>Recursos de computación en la nube que se utilizan para desarrollar, implementar y operar aplicaciones en la web.</p>
+                            <span class="text-uppercase text-success">Para más info, presiona el +</span>
+                        </div>
+                        <a class="btn btn-square" href="https://api.whatsapp.com/send?phone=+543364219789&text=Hola%20vengo%20del%20sitio%20web%20y%20me%20interesa%20saber%20sobre%20GCP"><i class="fa fa-plus text-success"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Price Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p id="redes" class="d-inline-flex bg-dark text-success py-1 px-4 me-auto">PACK DE REDES</p>
+                        <h1 class="text-uppercase mb-4">Todo lo necesario para despegar al mundo digital</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Logo </h6>
+                                <span class="text-uppercase text-success">$4500.-</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Historias Destacadas</h6>
+                                <span class="text-uppercase text-success">$3500.-</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Plantillas editables</h6>
+                                <span class="text-uppercase text-success">$7500.-</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Integración de plataformas</h6>
+                                <span class="text-uppercase text-success">$6500.-</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Videos Publicitarios</h6>
+                                <span class="text-uppercase text-success">$5000.-</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Catalogo digital</h6>
+                                <span class="text-uppercase text-success">$7500.-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/price.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+
+
+    <!-- Team Start lo utilicé para agregar certificados, modifique los botones sociales y agregue link-->
+    <div id="licencias" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="text-success d-inline-block bg-secondary py-1 px-4">ESTAMOS</p>
+                <h1 class="text-uppercase">Certificados en </h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://skillshop.credential.net/profile/leandroagustinortiz/wallet"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Google Ads</h5>
+                            <span class="text-success">Los beneficios que Google Ads aporta a las pymes y pequeños emprendedores son inmensas, esta herramienta permite darnos a conocer a nivel global sin la necesidad de invertir un presupuesto muy alto.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://skillshop.exceedlms.com/student/award/HBd4jzpDKmx5PtpK4h3rdY5L"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Google Analytics</h5>
+                            <span class="text-success">El principal motivo es la posibilidad de medir el impacto de los sitios web y el comportamiento de sus usuarios. De esta forma, se puede establecer el rendimiento del proyecto y las maneras de optimizarlo.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.cloudskillsboost.google/public_profiles/76b2a6ef-4b9a-4287-96b1-f56195879740"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Google Cloud Platform</h5>
+                            <span class="text-success">Conjunto de servicios de desarrollo, inteligencia artificial, analítica, almacenamiento, bases de datos y seguridad, que pueden ser utilizados bajo demanda conforme a las necesidades de las empresas.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.linkedin.com/in/leandroagustinortiz/details/certifications/"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Y más...</h5>
+                            <span class="text-success">Mindset estrategico, Email marketing, Publicidad en redes sociales, Canales alternativos de crecimiento y habilidades blandas.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Edite horario de trabajo -->
+    <div id="horario" class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-success py-1 px-4 me-auto">Estamos trabajando</p>
+                        <h1 class="text-uppercase mb-4">Horarios</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Lunes</h6>
+                                <span class="text-uppercase">09 - 16 HS</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Martes</h6>
+                                <span class="text-uppercase">09 - 16 HS</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Miercoles</h6>
+                                <span class="text-uppercase">09 - 16 HS</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Jueves</h6>
+                                <span class="text-uppercase">09 - 16 HS</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Viernes</h6>
+                                <span class="text-uppercase">09 - 16 HS</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Sab / Dom</h6>
+                                <span class="text-uppercase text-success">Cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Working Hours End -->
+
+
+    <!-- "Testimonial Start" se transformo en MARCAS-->
+    <div id="marcas" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-success py-1 px-4">Trabajamos con las siguientes</p>
+                <h1 class="text-uppercase">Marcas</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <h4 class="text-uppercase">Blessing</h4>
+                    <p class="text-success">Melisa Mora</p>
+                    <span class="fs-5">Flores de Bach - San Nicolás</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                    <h4 class="text-uppercase">Doval Digital</h4>
+                    <p class="text-success">Luis Doval</p>
+                    <span class="fs-5">Publicidad y ventas online - Chile</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                    <h4 class="text-uppercase">Electromallas</h4>
+                    <p class="text-success">Pablo Bockl</p>
+                    <span class="fs-5">Mallas electrosoldadas para la construcción - Argentina</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Contacto</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-success"></span>
+                        </div>
+                        <span>San Nicolás, Buenos Aires, Argentina</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-success"></span>
+                        </div>
+                        <span>+54 336 4219 789</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-success"></span>
+                        </div>
+                        <span>info@solomo.ar</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Enlaces rapidos</h4>
+                    <a class="btn btn-link" href="#sobre">Sobre</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="#servicios">Servicios</a>
+                    <a class="btn btn-link" href="index.html">Terminos y Condiciones</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Suscribite para novedades</h4>
+                    <div class="position-relative mb-4">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Ingresa tu dirección de email">
+                        <button type="button" class="btn btn-success py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribirme</button>
+                    </div>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-success m-1" href="https://twitter.com/solomo_ar"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-success m-1" href="https://www.facebook.com/solomo.ar/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-success m-1" href="https://www.instagram.com/solomo.ar/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-success m-1" href="https://www.linkedin.com/company/solomo-ar/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="index.html">Copyright 2022. Todos los derechos reservados.🐍Solomo </a>, <strong>Politicas de privacidad.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="index.html" class="btn btn-success btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
